@@ -15,7 +15,7 @@
                 <StackPanel Grid.Row="0">
                     <TextBlock Text="SELECT AIRPORT" Foreground="#AAAAAA" FontWeight="SemiBold" Margin="0,0,0,10"/>
                     <TextBox Text="{Binding SearchQuery, Mode=TwoWay}"
-                             PlaceholderText="Search..."
+                             Watermark="Search..."
                              Background="#1E1E1E" Foreground="White" BorderBrush="#444444"
                              Margin="0,0,0,15" Padding="10"/>
                 </StackPanel>
