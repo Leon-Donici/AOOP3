@@ -12,7 +12,7 @@
                 
                 <TextBox Grid.Row="0" 
                          Text="{Binding SearchQuery, Mode=TwoWay}" 
-                         PlaceholderText="Search airport by Name or IATA..." 
+                         Watermark="Search airport by Name or IATA..." 
                          Margin="0,0,0,10" />
 
                 <ListBox Grid.Row="1" 
@@ -40,7 +40,11 @@
             </Grid>
         </Border>
 
-        <mapsui:MapControl Grid.Column="1" Map="{Binding Map}" />
+        <Panel Grid.Column="1" Background="White">
+            <mapsui:MapControl x:Name="MapControl" 
+                               HorizontalAlignment="Stretch" 
+                               VerticalAlignment="Stretch" />
+        </Panel>
         
     </Grid>
 </UserControl>
